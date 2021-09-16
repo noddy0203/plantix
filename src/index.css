@@ -1,13 +1,99 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+ul{
+ list-style-type: none;
+ display: flex;
+justify-content: space-evenly;
+background-color: blanchedalmond;
+padding-bottom: 10px;
+padding-top: 8px;
+height: 50px;
+font-size: 22px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+li>a{
+    Text-decoration: none;
+    text-transform: capitalize;
+    font-weight: 600;
+    color: rgb(31, 24, 15);
+}
+
+.formStyle{
+    width: 500px;
+    margin: 0 auto;
+}
+
+.errorStyle{
+    color: crimson;
+    padding-top: 5px;
+}
+
+label{
+    margin-right: 10px;
+}
+
+input[type=text], input[type=password],  input[type=email] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+  }
+
+input:nth-child(n+1):hover{
+    background-color: blanchedalmond;
+}
+
+button {
+    background-color: #04AA6D;
+    color: white;
+    padding: 16px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+  }
+
+  button:hover{
+    opacity: 1;
+  }
+
+.banner{
+    background-image: url(./image/Background.jpg);
+width: 100%;
+height: 100vh;
+position: absolute;
+top: 50px;
+background-position: center;
+background-size: contain;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+color: rgb(17, 15, 11);
+}
+
+.banner>p{
+  font-size: 24px;
+font-weight: 500;
+}
+.banner>p>span{
+font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 30px;
+font-weight: 700;
+color: brown;
+}
+
+.homeBtn{
+    text-decoration: none;
+    border: 1px solid blanchedalmond;
+color: rgb(170, 63, 63);
+font-size: 24px;
+padding: 5px 35px;
+}
+.homeBtn:hover{
+    color: darkblue;
+border: 1px solid darkred;
+transition: all 0.5s ease-in-out ;
+border-radius: 5px;
 }
