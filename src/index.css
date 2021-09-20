@@ -9,6 +9,22 @@ height: 50px;
 font-size: 22px;
 }
 
+.userDiv{
+  margin-top: 50px;
+}
+.userInfo{
+  float: left;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+ justify-content: space-evenly;
+ background-color: blanchedalmond;
+ padding-bottom: 8px;
+ padding-top: 6px;
+ height: 30px;
+ font-size: 18px;
+}
+
 li>a{
     Text-decoration: none;
     text-transform: capitalize;

@@ -7,7 +7,9 @@ if(!state.address){
     error.address = "enter your address"
 }
 if(!state.code){
-    error.code = "enter valid zip-code"
+    error.code = "enter zip-code"
+} else if(state.code.length<6){
+    error.code = "enter valid zip code"
 }
 if(!state.phone){
     error.phone = "enter contact number"
